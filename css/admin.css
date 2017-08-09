@@ -1,0 +1,260 @@
+.pavobbs-wrap > .head-area {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #e1e1e1;
+    max-width: 100%;
+    min-height: 45px;
+    padding: 16px 20px;
+	margin-bottom : 10px;
+}
+
+.pavoboard-wrapper .settings-panel {
+    background: #fff none repeat scroll 0 0;
+	margin : 0 0 10px 0;
+}
+
+.pavoboard-wrapper .settings-panel .setting-title {
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+	margin-bottom : 15px;
+    padding: 10px 20px;
+}
+
+.pavoboard-wrapper .pavoboard-preview {
+	float: left;
+	width: 58%;
+	min-width: 300px;
+	padding : 0 10px;
+}
+
+.pavoboard-wrapper .pavoboard-preview div.preview{
+	background-color: #ffffff;
+}
+
+.pavoboard-wrapper .pavoboard-dashboard {
+	float: right;
+	width: 40%;
+}
+
+
+
+.setting-field {
+    border-bottom: 1px solid #fafafa;
+	padding : 14px 20px;
+}
+
+.setting_desc {
+    float: left;
+    width: 45%;
+}
+
+.setting_desc label {
+    color: #222222;
+    font-size: 13px;
+}
+
+.setting_desc p {
+    color: #939393;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+.setting_field {
+	float: right;
+    width: 50%;
+    position: relative;
+}
+
+.settings-panel .setting-title .handlediv:before {
+	content: "\f140";
+}
+
+.settings-panel.active .setting-title .handlediv:before {
+	content: "\f141";
+}
+
+.settings-panel .setting-title .handlediv {
+	color : #a0a5aa;
+	display: inline-block;
+    font: 400 20px/1 dashicons;
+    padding: 8px 10px;
+    position: relative;
+    right: 12px;
+    text-decoration: none !important;
+    top: 0;
+}
+
+
+.settings-panel .setting-field {
+	display : none;
+}
+
+.settings-panel.active .setting-field {
+	display : block;
+}
+
+.colpick {
+	z-index : 1;
+}
+
+.clear {
+	clear : both;
+}
+
+
+.ebbs-metaboxes-wrapper{
+	padding: 0.5em 0.75em 0.5em 1em !important;
+    width: 95%;
+}
+
+.ebbs-metaboxes-wrapper table {
+	width: 100%;
+}
+
+.ebbs-metaboxes-wrapper th{
+	width: 25%;
+}
+
+.ebbs-metaboxes-wrapper .panel{
+		width: 75%;
+}
+
+.ebbs-metaboxes-wrapper tr div.attributes-meta{
+	display : none;
+}
+
+
+.ebb-itemized-wrapper {
+	.ebbs-metabox{
+	    background: #fff;
+		border-bottom: 1px solid #eee;
+		margin: 0 !important;
+	}
+}
+
+.ebb-itemized-wrapper .ebbs-metabox {
+	border-bottom: 1px solid #eee;
+}
+
+.ebb-itemized-wrapper .ebbs-metabox .handlediv::before {
+    content: "\f142" !important;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Dashicons;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: 20px;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 0.5 !important;
+    padding: 8px 10px;
+    position: relative;
+    right: 12px;
+    top: 0;
+}
+
+
+.ebb-itemized-wrapper .ebbs-metabox.closed .handlediv::before {
+    content: "\f140" !important;
+}
+
+
+.ebb-itemized-wrapper .ebbs-metabox h3 {
+    font-size: 1em !important;
+    margin: 0 !important;
+    overflow: hidden;
+    padding: 0.75em 0.75em 0.75em 1em !important;
+}
+
+
+.ebb-itemized-wrapper .ebbs-metabox h3 a.delete{
+	color: red;
+    font-weight: 400;
+    line-height: 26px;
+    position: relative;
+    text-decoration: none;
+    float: right;
+}
+
+.ebbs_variable_attributes{
+	display : none;
+	background-color: #fdfdfd;
+    border-top: 1px solid #eee;
+}
+
+.ebbs_variable_attributes .data {
+    padding: 1em 2em;
+}
+
+
+
+table.ebbs_help_table {
+	margin-bottom: 1em;
+}
+
+table.ebbs_help_table th {
+    font-weight: 700;
+    padding: 9px;
+}
+
+table.ebbs_help_table td:first-child {
+    width: 26%;
+}
+
+table.ebbs_help_table td {
+    font-size: 1.1em;
+    padding: 9px;
+}
+
+
+table.ebbs_help_table > tbody > *:nth-child(2n+1) {
+    background-color: #fdfdfd;
+}
+
+#tiptip_holder {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 9999999;
+}
+
+#tiptip_content {
+    background-color: rgba(25, 25, 25, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    box-shadow: 0 0 3px #555;
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 5px 10px;
+    text-shadow: 0 0 2px #000;
+}
+
+#tiptip_arrow, #tiptip_arrow_inner {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 6px;
+    height: 0;
+    position: absolute;
+    width: 0;
+}
+#tiptip_holder.tip_top #tiptip_arrow {
+    border-top-color: rgba(255, 255, 255, 0.35);
+}
+#tiptip_holder.tip_bottom #tiptip_arrow {
+    border-bottom-color: rgba(255, 255, 255, 0.35);
+}
+#tiptip_holder.tip_right #tiptip_arrow {
+    border-right-color: rgba(255, 255, 255, 0.35);
+}
+#tiptip_holder.tip_left #tiptip_arrow {
+    border-left-color: rgba(255, 255, 255, 0.35);
+}
+#tiptip_holder.tip_top #tiptip_arrow_inner {

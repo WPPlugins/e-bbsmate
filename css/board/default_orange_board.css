@@ -1,0 +1,129 @@
+@charset 'utf-8';
+		
+/* font */
+div.pavoboard-wrapper.pavoboard-custom,
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table tbody tr td.pavoboard-list-date,
+div.pavoboard-wrapper.pavoboard-custom .pagingNav a,
+div.pavoboard-wrapper.pavoboard-custom .noti-td .noti-icon , div.pavoboard-wrapper.pavoboard-custom div.setting-content.preview{
+	font-family: "Malgun Gothic", Dotum, Gulim, Helvetica, Arial, sans-serif;
+}
+div.pavoboard-wrapper.pavoboard-custom {
+	font-size: 12px;
+	color: #424242;
+}
+		
+/* board-head */
+/* div.pavoboard-wrapper.pavoboard-custom .head-st {
+	background-color: ;
+	background-image: ;
+	background-repeat: ;
+	background-position: ;
+	border-width: ;
+	border-style: ;
+	border-color: ;
+	border-radius: ;
+	font-size: ;
+	color: ;
+	opacity: ;
+} */
+		
+/* board */
+div.pavoboard-wrapper.pavoboard-custom span.entry_comment_count ,
+div.pavoboard-wrapper.pavoboard-custom span.icon-reply,
+div.pavoboard-wrapper.pavoboard-custom .pagingNav strong,
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table tbody tr td.pavoboard-list-title a:hover {
+	color: #ff8140;
+}
+div.pavoboard-wrapper.pavoboard-custom .pagingNav strong {
+	border-color: #ff8140;
+}
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table tbody tr td.pavoboard-list-title a:hover {
+	opacity: 0.8;
+}
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table tbody tr td {
+	border-style: solid;
+	border-color: #ff8140;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+		
+/* board-head */
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table thead tr th {
+	border-width: 0px;
+	border-color: #ff8140;
+	background: #ff8140;
+}
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table thead tr th span {
+	font-size: 10pt;
+	text-decoration: ;
+	font-style: ;
+	font-weight: bold;
+	border-left-color: #ff8140;
+	color: #fff;
+}
+		
+/* board-noti */
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table tbody tr td.noti-td {
+	background: #f0f0f0;
+	/* opacity: ; */
+}
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table > tbody > tr > td.pavoboard-list-title.noti-td > a {
+	text-decoration: ;
+	font-style: ;
+	font-weight: bold;
+	color: #000;
+}
+div.pavoboard-wrapper.pavoboard-custom .noti-td .noti-icon {
+	background: #f0f0f0;
+	border-radius: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ff8140;
+	/* opacity: ; */
+}
+		
+/* board-body*/
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table > tbody > tr > td.pavoboard-list-title > a {
+	font-size: 13px;
+	text-decoration: ;
+	font-style: ;
+	font-weight: ;
+	color: #333;
+}
+		
+/* button */
+div.pavoboard-wrapper.pavoboard-custom .pavoboard-button {
+	background: #ff8140;
+	border-color: #ff8140;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 0px;
+}
+		
+div.pavoboard-wrapper.pavoboard-custom table#pavoboard-table tbody tr:hover {
+	background-color: #f8f8f8;
+}
+		
+div.pavoboard-wrapper .ebbsmate-section-wrapper a.section_tab{
+	background: #ffffff;
+    border: 1px solid;
+	border-color: #ff8140;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px !important;
+    line-height: 11px;
+    padding: 7px 10px 6px !important;
+    text-decoration: none;
+    vertical-align: top;
+    width: auto;
+}
+		
+div.pavoboard-wrapper .ebbsmate-section-wrapper a.section_tab.active {
+    background: #ff8140;
+    color: #ffffff;
+}
+/* 위 CSS는 수정 불가합니다. 여기 아래서부터 추가 CSS를 입력할 수 있습니다. */

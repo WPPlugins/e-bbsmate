@@ -1,0 +1,2368 @@
+@charset 'utf-8';
+body {
+  margin: 0;
+}
+.pavoboard-wrapper ul,
+.pavoboard-wrapper li,
+.pavoboard-wrapper ol {
+  list-style: none;
+}
+.pavoboard-wrapper table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.pavoboard-wrapper table th,
+.pavoboard-wrapper table td {
+  border: 0;
+}
+.pavobbs-wrap > div.head-area:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pavoboard-wrapper input[type="text"],
+.pavoboard-wrapper select {
+  padding: 0;
+  margin: 0;
+}
+.pavobbs-wrap div.head-area .pavoboard-logo {
+  float: left;
+  width: 240px;
+}
+.pavobbs-wrap .head-area .pavoboard-logo img {
+  width: 100%;
+  margin-right: 5px;
+}
+.pavobbs-wrap .head-area .pavoboard-title {
+  float: left;
+  font-size: 18px;
+  line-height: 42px;
+  vertical-align: middle;
+}
+.pavoboard-wrapper div.settings-panel .setting-title {
+  border-bottom: 1px solid #e1e1e1;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+.pavoboard-wrapper div.settings-panel .setting-title .handlediv {
+  padding:0;
+  right:0;
+}
+.pavoboard-wrapper div.settings-panel .setting-content {
+  padding: 20px;
+}
+.pavoboard-wrapper div.settings-panel .setting-content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pavoboard-wrapper {
+  font-family: "돋움", Dotum, Gulim, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+  color: #424242;
+  font-weight: 500;
+}
+.pavoboard-wrapper:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.pavoboard-wrapper div.pavoboard-preview {
+  float: left;
+  width: 58%;
+  min-width: 300px;
+  padding: 0;
+}
+.pavoboard-wrapper .pavoboard-dashboard {
+  float: right;
+  width: 40%;
+}
+.pavoboard-wrapper > p {
+  height: 0;
+  margin: 0;
+}
+caption.blind {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0
+}
+div.pavoboard-wrapper div.pavoboard-section-button-wrapper {
+  display: block;
+  margin: 0 0 10px 0;
+}
+div.pavoboard-wrapper div.pavoboard-section-button-wrapper a.active {
+  background: #424242 !important;
+  color: #fff !important;
+}
+div.pavoboard-wrapper div.pavoboard-section-button-wrapper a.active:hover {
+  box-shadow: none !important;
+}
+div.pavoboard-wrapper div#pavoboard-read-table {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.title-section {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid #cecece;
+  background: #FCFCFC;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.writer-section {
+  display: block;
+  padding: 8px 10px;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #f1f1f1;
+  background: #fff;
+  text-align: left;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section {
+  display: block;
+  padding: 20px 10px;
+  line-height: 1.5;
+  font-size: 12px;
+  word-wrap: break-word;
+  border-bottom: 1px solid #cecece;
+  background: #fff;
+  color: #424242;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-tags {
+  display: block;
+  margin-top: 20px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-tags span.each-tag {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 5px;
+  background: #f1f1f1;
+  color: gray;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-tags span.each-tag:hover {
+  color: #424242;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach {
+  display: block;
+  background: #f1f1f1;
+  border: 1px solid #e0e0e0;
+  margin-top: 10px;
+  text-align: left;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach div {
+  display: inline-block;
+  padding: 5px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach div.attachment-title {
+  vertical-align: top;
+  padding-top: 8px;
+  padding-left: 10px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach div.attachment-list {}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach div.attachment-list div.each-attach {
+  display: block;
+  padding: 2px 0
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach div.attachment-list div.each-attach span.each-attach-span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 12px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.content-section div.content-section-attach div.attachment-list div.each-attach span.each-attach-span a {
+  text-decoration: none;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section {
+  display: block;
+  margin-top: 20px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor {
+  display: block;
+  border: 0px solid #e0e0e0;
+  background: #fff;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-top {
+  display: block;
+  text-align: left;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-top span {
+  vertical-align: middle;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-top span strong {
+  color: #424242;
+  width: auto;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content {
+  margin: 5px 100px 0 60px;
+  position: relative;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.write-comment-captcha {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 60px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content span.comment-editor-avatar {
+  position: absolute;
+  top: 0;
+  left: -60px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content div.comment-editor-text {
+  display: block;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content div.comment-editor-text textarea {
+  width: 100%;
+  height: 80px;
+  line-height: 1.5 !important;
+  font-size: 12px !important;
+  box-sizing: border-box;
+  background: #ffffff !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b6b6b6 #d7d7d7 #d7d7d7 #b6b6b6;
+  padding: 10px;
+  line-height: 1.5;
+  box-shadow: none;
+  border-radius: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content span.comment-editor-avatar img {
+  background: #fff;
+  padding: 2px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content button.button-comment-write {
+  position: absolute;
+  right: -100px;
+  top: 0;
+  height: 80px;
+  width: 95px;
+  text-align: center;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content-input {
+  margin-top: 5px;
+  overflow-y: hidden;
+  height: 0;
+  display: none;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content-input input {
+  display: inline-block;
+  width: 150px;
+  padding: 8px 3px !important;
+  border: 1px solid #e0e0e0;
+  background: #f7f7f7;
+  height: auto !important;
+  line-height: 12px !important;
+  box-shadow: none;
+  border-radius: 0;
+}
+div.pavoboard-wrapper div.pavoboard-comment-modify-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 80px 0 0;
+  height: 80px;
+}
+div.pavoboard-wrapper div.pavoboard-comment-modify-wrapper textarea {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+}
+div.pavoboard-wrapper div.pavoboard-comment-modify-wrapper button {
+  position: absolute;
+  top: 0;
+  right: -80px;
+  height: 100%;
+  width: 77px;
+}
+div.pavoboard-wrapper div.comment-checker-wrapper {
+  display: block;
+}
+div.pavoboard-wrapper div.comment-checker-wrapper div.comment-checker {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+div.pavoboard-wrapper div.comment-checker-wrapper div.comment-checker label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+div.pavoboard-wrapper div.comment-checker-wrapper div.comment-checker div.comment-checker-input {
+  position: relative;
+  display: block;
+  margin: 0 60px 0 0;
+  height: 30px;
+}
+div.pavoboard-wrapper div.comment-checker-wrapper div.comment-checker div.comment-checker-input input {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+div.pavoboard-wrapper div.comment-checker-wrapper div.comment-checker div.comment-checker-input button {
+  position: absolute;
+  top: 0;
+  right: -60px;
+  height: 100%;
+  width: 55px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list {
+  display: block;
+  margin-top: 20px;
+  background: #fff;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list div.list-header {
+  display: block;
+  font-size: 12px;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 8px 10px;
+  position: relative;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper {
+  display: block;
+  padding-left: 0;
+  margin-top: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .children {
+  margin-top: 10px;
+  padding-left: 15px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .children .each-comment {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: none;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .children .each-comment.deleted-comment::before {
+  height: 18px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .children .each-comment::before {
+  content: '';
+  display: block;
+  float: left;
+  width: 15px;
+  height: 55px;
+  background: url('../images/icon-reply.gif') no-repeat 0 center;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list > span.comment-read-denied {
+  display: block;
+  padding: 10px;
+  color: #797979;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box {
+  position: relative;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box span.comment-avatar {
+  float: left;
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box span.comment-avatar img {
+  padding: 2px;
+  border: 1px solid #e0e0e0;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box div.comment-content {
+  display: block;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box div.comment-content div.comment-content-writer {
+  display: inline-block;
+  padding: 3px 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box div.comment-content div.comment-content-writer span.author {
+  color: #444;
+  font-weight: 400;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box div.comment-content div.comment-content-writer span.date {
+  font: 11px Tahoma, Geneva, sans-serif;
+  color: #888;
+  padding: 0 12px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-box div.comment-content div.comment-content-text {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0;
+  color: #424242;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-controller {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  opacity: 1;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-controller span {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-controller span span {
+  vertical-align: middle;
+  font-size: 11px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-controller span span:last-child {
+  margin: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply {
+  position: relative;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply textarea {
+  display: block;
+  height: 80px;
+  width: 100%;
+  margin-top: 3px;
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply div.comment-reply-input {
+  position: relative;
+  margin-top: 3px;
+  min-height: 30px;
+  text-align: right;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply div.comment-reply-input button {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply input {
+  display: inline-block;
+  width: 119px;
+  padding: 8px 3px !important;
+  border: 1px solid #e0e0e0;
+  background: #f7f7f7;
+  height: auto !important;
+  line-height: 12px !important;
+  font-size: 12px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply div.comment-reply-header span a {
+  cursor: pointer;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-reply div.comment-reply-header span a span {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  font-size: 11px;
+  display: inline-block;
+  vertical-align: middle;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.writer-section div.regist-writer {
+  display: inline-block;
+  text-align: left;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.writer-section div.regist-info {
+  float: right;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.writer-section div.regist-info span {
+  color: #888;
+  display: inline-block;
+  font-size: 11px;
+  position: absolute;
+  right: 0;
+  width: 300px;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.writer-section div.regist-info span b {
+  color: #666;
+  padding-left: 2px;
+  font-family: Tahoma, Geneva, Sans-serif;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.title-section div.regist-date {
+  float: right;
+  font-size: 12px;
+  line-height: 12px;
+  vertical-align: middle;
+  padding-left: 10px;
+  position: relative;
+  top: -18px;
+  margin: 0;
+}
+div.pavoboard-wrapper div#pavoboard-read-table div.title-section h1.pavoboard-read-h1 {
+  font-size: 14px;
+  color: #424242;
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  display: block;
+  clear: inherit;
+  text-align: left;
+  margin-right: 100px;
+}
+div.pavoboard-wrapper h2.pavoboard-read-h2 {
+  font-size: 12px;
+  color: #424242;
+  margin: 0;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 1.5;
+}
+.pavoboard-wrapper img {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+}
+.pavoboard-wrapper select {
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 !important;
+}
+.pavoboard-wrapper button {
+  font-size: 12px;
+  line-height: 100%;
+}
+.pavoboard-wrapper a:not(#insert-media-button) {
+  text-decoration: none;
+}
+.pavoboard-wrapper a:hover {
+  color: #5480cb;
+}
+
+.pavoboard-wrapper .ebbsmate-section-wrapper {
+	margin: 0 0 10px;
+}
+.pavoboard-wrapper a.section_tab {
+  background: #fff none repeat scroll 0 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  box-shadow: none;
+  color: #424242;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 11px;
+  padding: 7px 10px 6px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+  margin: 1px;
+	
+}
+
+.pavoboard-wrapper a.section_tab.active {
+	background: #424242;
+    color: #fff;
+}
+
+div.pavoboard-wrapper .pavoboard-button {
+  display: inline-block;
+  height: 27px;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #a9a9a9;
+  font-size: 12px;
+  line-height: 27px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: none;
+  color: #424242;
+  width: auto;
+}
+div.pavoboard-wrapper .pavoboard-button:hover {
+  opacity: 0.7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+div.pavoboard-wrapper div.pavoboard-search div.pavoboard-search-buttons {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  min-width: 300px;
+  text-align: left;
+}
+div.pavoboard-wrapper div.pavoboard-search div.pavoboard-search-buttons a.pavoboard-button {
+  padding: 9px 10px 8px 10px !important;
+}
+div.pavoboard-wrapper div.pavoboard-search span.btn-pavoboard-search {
+  border: 1px solid #e0e0e0;
+  padding: 4px 10px !important;
+  font-size: 11px;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  box-shadow: none;
+  background: #fff;
+  position: relative;
+  margin-right: 4px;
+  display: inline-block;
+  height: 100%;
+  min-width: 47px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+div.pavoboard-wrapper div.pavoboard-search span.pavoboard-section-span {
+  display: inline-block;
+  height: 20px;
+  line-height: 1.6;
+  vertical-align: top;
+  padding: 0;
+  position: relative;
+  height: 30px;
+  width: inherit;
+  float: inherit;
+  margin: 0;
+}
+div.pavoboard-wrapper div.pavoboard-search span.pavoboard-section-span select {
+  width: auto;
+  display: inline-block;
+  font-size: 12px;
+  background: #fff;
+  line-height: 1.5;
+  box-sizing: border-box;
+  height: 100%;
+  border-radius: 0 !important;
+  border: 1px solid #e0e0e0;
+}
+div.pavoboard-wrapper div.pavoboard-search span.btn-pavoboard-search label {
+  vertical-align: middle;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  width: 30px;
+  display: inline-block;
+  font-size: 12px;
+}
+div.pavoboard-wrapper div.pavoboard-search span.btn-pavoboard-search input.pavoboard-keyword {
+  position: absolute;
+  cursor: pointer;
+}
+div.pavoboard-wrapper .pavoboard-list-icon {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
+div.pavoboard-wrapper .pavoboard-attach {
+  width: 15px;
+  height: 16px;
+  background: url('../images/icons.png') -36px 0px no-repeat;
+  margin: 0 2px;
+  color: transparent !important;
+}
+div.pavoboard-wrapper .pavoboard-secret {
+  width: 11px;
+  height: 16px;
+  background: url('../images/icons.png') -139px 0px no-repeat;
+  margin: 0 2px;
+  color: transparent !important;
+}
+div.pavoboard-wrapper .pavoboard-notice {
+  width: 15px;
+  height: 15px;
+  background: url('../images/icons.png') 0px 0px no-repeat;
+  color: transparent !important;
+}
+div.pavoboard-wrapper .pavoboard-current-post {
+  width: 15px;
+  height: 15px;
+  background: url('../images/icons.png') -105px 0px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-tag {
+  width: 15px;
+  height: 16px;
+  background: url('../images/icons.png') -18px 0px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-search {
+  width: 15px;
+  height: 15px;
+}
+div.pavoboard-wrapper .pavoboard-write {
+  width: 14px;
+  height: 15px;
+  background: url('../images/icons.png') -53px -1px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-people {
+  width: 15px;
+  height: 15px;
+  background: url('../images/icons.png') -169px -1px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-comment-modify {
+  width: 12px;
+  height: 12px;
+  background: url('../images/icons.png') -28px 0px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-comment-delete {
+  width: 12px;
+  height: 12px;
+  background: url('../images/icons.png') -42px 0px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-comment-reply {
+  width: 13px;
+  height: 12px;
+  background: url('../images/icons.png') -13px 0px no-repeat;
+}
+div.pavoboard-wrapper .pavoboard-comment-close {
+  width: 12px;
+  height: 12px;
+  background: url('../images/icons.png') -55px 0px no-repeat;
+  margin-right: 3px;
+}
+span.icon-reply {
+  background: url('../images/icon-reply.gif') no-repeat 0 center;
+  display: inline-block;
+  height: 10px;
+  padding-left: 10px;
+  color: #5480cb;
+  font-weight: bold;
+}
+div.comment-edit {
+ margin-left: 65px;
+}
+div.comment-edit .comment-edit-input input {
+  width: 119px;
+  height: 24px;
+  padding: 0 3px;
+  border: 1px solid #e0e0e0;
+  background: #f7f7f7;
+  line-height: 24px;
+  font-size: 12px;
+}
+div.comment-edit .comment-edit-input button {
+  display: inline-block;
+  height: 26px;
+  padding: 0 8px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  font-size: 12px;
+  line-height: 26px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: none;
+  color: #424242;
+  width: auto;
+  cursor: pointer;
+}
+div.comment-edit .comment-edit-input button:hover {
+  opacity: 0.6;
+}
+div.pavoboard-wrapper table#pavoboard-table {
+  background: #fff;
+  margin-bottom: 0;
+  width: 100%;
+  border: 0;
+  color: #424242;
+  border-spacing: 1px;
+}
+div.pavoboard-wrapper table#pavoboard-table tr {
+  border: 0;
+  background: #fff;
+  background-color: #fff;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th {
+  background: #fcfcfc;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+  text-align: center;
+  padding: 10px 0;
+  height: 14px;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr.entry-notice {
+  background: #f8f8f8;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th span {
+  display: block;
+  margin: 0;
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 500;
+  color: #424242;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th:first-child span {
+  border-left: 0px;
+  height: 14px;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th span {
+  display: block;
+  padding: 0 15px;
+  border-left: 1px solid #e0e0e0;
+}
+div.pavoboard-wrapper table#pavoboard-table th:first-child span {
+  border-left: 0px solid #F00 !important;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td {
+  padding: 10px 0;
+  vertical-align: middle;
+  color: #424242;
+  border-width: 0 0 1px 0;
+  border-color: #e8e8e8;
+  border-style: solid;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.2;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr:hover {
+  background: #f8f8f8;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr.current {
+  background: #f8f8f8;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th.entry-th-number {
+  width: 72px;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th.entry-th-title {
+  width: auto;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th.entry-th-writer {
+  width: 100px;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th.entry-th-section {
+  width: 100px;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th.entry-th-date {
+  width: 100px;
+}
+div.pavoboard-wrapper table#pavoboard-table thead tr th.entry-th-hit {
+  width: 60px;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-number {
+  text-align: center;
+  font: 11px Tahoma, Geneva, sans-serif;
+  color: #555;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-section {
+  text-align: center;
+  color: gray;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-date {
+  text-align: center;
+  font: 11px Tahoma, Geneva, sans-serif;
+  color: #767676;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-hit {
+  text-align: center;
+  font: 11px Tahoma, Geneva, sans-serif;
+  color: #767676;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-writer {
+  text-align: center;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-writer span {
+  max-width: 90%;
+  line-height: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  display: -moz-inline-blox;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  vertical-align: middle;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr:last-child td {
+  border-bottom: 1px solid #cccccc;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-title {
+  text-align: left;
+  padding: 10px 0 10px 20px;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td:hover {
+  background: inherit;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr.entry-notice td.pavoboard-list-title {
+  font-weight: bold;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-title a {
+  display: inline-block;
+  text-decoration: none;
+  color: #424242;
+  max-width: 90%;
+  line-height: 1.2;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-inline-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  font-weight: inherit;
+  word-break: break-all;
+  text-transform: none;
+  word-wrap: break-word;
+}
+div.pavoboard-wrapper table#pavoboard-table > tbody > tr > td.pavoboard-list-title > a {
+  max-width: 100%;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-title a span.pavoboard-list-icon:first-child {
+  margin-left: 5px;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody tr td.pavoboard-list-title a:hover {
+  color: #5480cb;
+}
+div.pavoboard-wrapper table#pavoboard-table tbody .pavoboard-list-title div.mobile-writer-info {
+  display: none;
+}
+.pavoboard-wrapper > #pavoboard-table tbody .pavoboard-list-title > .entry_thumbnail_image {
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  margin-right: 5px;
+  width: 22px;
+  height: 22px;
+  overflow-y: hidden;
+  line-height: 0px;
+  vertical-align: middle;
+}
+.pavoboard-wrapper > #pavoboard-table tbody .pavoboard-list-title > .entry_thumbnail_image img {
+  margin: 0;
+  width: 22px !important;
+  height: auto !important;
+  line-height: 0px;
+}
+.pavoboard-wrapper > #pavoboard-table tbody .pavoboard-list-title > a:hover {
+  color: #000;
+}
+.pavoboard-wrapper > .pavoboard-copyrights {
+  clear: both;
+  color: gray;
+  font-weight: normal;
+  margin-top: 10px;
+}
+.pavoboard-wrapper > .pavoboard-copyrights a {
+  color: gray;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 12px;
+  color: #424242 !important;
+}
+.pavoboard-wrapper > .pavoboard-copyrights a:hover {
+  color: #424242;
+}
+div.pavoboard-wrapper div.pavoboard-controller {
+  display: block;
+  margin-top: 7px;
+  position: relative;
+  height : 30px;
+}
+div.pavoboard-wrapper div.pavoboard-controller a.write-button {
+  /*position:absolute;
+  right:0;*/
+  height: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.pavoboard-button.write-button {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+.pavoboard-wrapper span.write-span div.file-upload {
+  display: block;
+  margin: 0 100px 0 0;
+  position: relative;
+  height: 30px;
+}
+.pavoboard-wrapper span.write-span div.file-upload input.text {
+  display: block;
+  position: inherit;
+}
+.pavoboard-wrapper span.write-span div.file-upload div.upload-btn {
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+.pavoboard-wrapper span.write-span div.file-upload div.upload-btn input.file {
+  position: absolute;
+  width: 90px;
+  top: 0;
+  right: 0;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+}
+.pavoboard-wrapper span.write-span div.file-upload div.upload-btn button {
+  position: relative;
+  width: 90px !important;
+  height: 30px;
+}
+.pavoboard-wrapper span.write-span input.text {
+  width: 300px;
+  height: 23px;
+  padding: 0 6px;
+  border: 1px solid #b5b5b5;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper {
+  display: block;
+  border-top: 1px solid #cecece;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.textarea-box {
+  display: block;
+  margin-bottom: 10px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.textarea-box span.write-span {
+  float: inherit;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.textarea-box textarea:not(.wp-editor-area) {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 200px;
+  border: 1px solid #e0e0e0;
+  background: #f1f1f1;
+  color: #424242;
+  padding: 10px;
+  line-height: 1.5;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file {
+  display: block;
+  margin-top: 40px;
+  position: relative;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file div.added-file-box {
+  display: block;
+  background: #f1f1f1;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  position: relative;
+  margin: 30px 0 0 0;
+  border-radius: 3px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file span.added-file-label {
+  position: absolute;
+  top: -30px;
+  right: 42px;
+  background: #f1f1f1;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 3px 0px 0 0;
+  font-size: 11px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file span {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file span.added-file-thumbnail {
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  margin-right: 10px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file span.added-file-content {
+  padding: 10px 0;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file span.added-file-remove {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  background: #f1f1f1;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #c9c9c9;
+  border-left: 1px dashed #c9c9c9;
+  border-radius: 0px 3px 0 0;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.added-file span.added-file-remove:hover {
+  background: #e0e0e0;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box {
+  display: block;
+  margin: 10px 0 10px 100px;
+  position: relative;
+  padding: 0;
+  height: 30px;
+  border: 0
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box-devider {
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box {
+  height: 15px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.attach-message-box {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.popular-tag-list {
+  display: none;
+  position: relative;
+  height: 0px;
+  margin: 0 0 0 100px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.popular-tag-list span.each-tag {
+  display: inline-block;
+  margin: 0 0 3px;
+  width: 23%;
+  min-width: 100px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.rows-more {
+  display: block;
+  height: 35px;
+  position: relative;
+  width: 100%;
+  background: #f1f1f1;
+  border-top: 1px solid #c9c9c9;
+  margin-bottom: 10px;
+  text-align: center;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.rows-more > a {
+  position: relative;
+  display: block;
+  margin: 0 auto !important;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  background: #fff !important;
+  border-top: 1px solid#fff;
+  margin-top: -1px !important;
+  border-left: 1px solid #c9c9c9;
+  border-right: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c0c0c0;
+  vertical-align: middle;
+  line-height: 33px !important;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box label {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: -100px;
+  width: 100px;
+  height: 100%;
+  text-align: left;
+  margin: 0;
+  font-weight: 700;
+  padding-left: 10px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box label span {
+  display: table-cell;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 12px;
+  font-size: 12px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box label span span.label-required {
+  display: inline-block;
+  color: #da2128;
+  height: auto;
+  margin: -3px 0 0 3px;
+  width: auto;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box label span {
+  height: 20px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span {
+  display: table-cell;
+  height: 30px;
+  vertical-align: middle;
+  text-align: left;
+  float: inherit;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span div.selection-box {
+  border: 1px solid #e0e0e0;
+  background: #f1f1f1;
+  padding: 0;
+  min-width: 200px;
+  position: relative;
+  z-index: 9999;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span div.selection-box div.current {
+  padding: 5px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span div.selection-box ul.options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span div.selection-box ul.options li:first-child {
+  display: none;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span div.selection-box ul.options li {
+  padding: 5px 0 5px 10px;
+  border-top: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span div.selection-box ul.options li:hover {
+  background: #e0e0e0;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box span.write-span {
+  display: table-cell;
+  height: 20px;
+  vertical-align: middle;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span input {}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box span.write-span input[type='checkbox'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box span.write-span > span.toggle-checkbox-image {
+  display: inline-block;
+  opacity: 1;
+  cursor: pointer;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box span.write-span input[type='checkbox']:before {
+  display: inline-block;
+  content: '';
+  opacity: 1;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.check-box span.write-span input[type='checkbox']:checked:before {
+  display: inline-block;
+  content: '';
+  width: 20px;
+  height: 20px;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span input[type='text'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #b6b6b6 #d7d7d7 #d7d7d7 #b6b6b6;
+  font-size: 12px;
+  color: #424242;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-box span.write-span input[type='password'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  background: #f1f1f1;
+  font-size: 12px;
+  color: #424242;
+  padding: 0 10px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.pavoboard-wrapper #pavoboard-read-table {
+  table-layout: fixed;
+  border: 0;
+  border-top: 1px solid #cecece;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+  width: 100%;
+  display: inline-table;
+}
+.pavoboard-wrapper #pavoboard-read-table th {
+  border: 0px;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+  background: #fff;
+  color: #424242;
+  vertical-align: middle;
+}
+.pavoboard-wrapper #pavoboard-read-table td {
+  border: 0px;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info {
+  background: #f4f4f4;
+}
+.pavoboard-wrapper #pavoboard-read-table td {
+  border: 0px;
+  padding: 12px 22px;
+}
+.pavoboard-wrapper #pavoboard-read-table td:hover {
+  background: none;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-content {
+  height: 200px;
+  vertical-align: top;
+  text-align: left;
+  background: #fff;
+  background-color: #fff;
+  color: #424242;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-content:hover {
+  background: #fff;
+  background-color: #fff;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td {
+  border-bottom: 1px solid #e0e0e0;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > li {
+  float: left;
+  font-size: 12px;
+  list-style: none;
+  margin: 0;
+  color: #424242;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-title-writer {
+  padding: 0 20px 0 0;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-writer {
+  padding: 0 50px 0 0;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-title-date {
+  padding: 0 20px 0 0;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-date {
+  padding: 0 50px 0 0;
+}
+.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-title-hit {
+  padding: 0 20px 0 0;
+}
+v.pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-hit {
+  padding: 0 50px 0 0;
+}
+.pavoboard-wrapper .attachment-tr .attachment-controller {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+}
+.pavoboard-wrapper .attachment-tr .attachment-controller > img {
+  margin: 0;
+}
+.pavoboard-wrapper .entry_attachment_title {
+  padding: 3px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.pavoboard-wrapper .entry_each_attach {
+  padding: 5px 0 5px 5px;
+  border-bottom: 1px dashed #e0e0e0;
+}
+.pavoboard-wrapper .entry_each_attach > a {
+  text-decoration: none;
+}
+.pavoboard-wrapper .entry_each_attach .entry_attach_remove {
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+}
+div.pavoboard-wrapper .pavoboard-search {
+  display: inline-block;
+  height: 100%;
+  width: 100%
+}
+div.pavoboard-wrapper .pavoboard-search form {
+  display: block;
+  position: relative;
+}
+div.pavoboard-wrapper .pavoboard-search select {
+  width: auto;
+  padding: 0 5px;
+  height: 29px;
+  border: 1px solid #a9a9a9;
+  vertical-align: middle;
+}
+div.pavoboard-wrapper .pavoboard-search .pavoboard-keyword {
+  width: 148px;
+  height: 27px;
+  border: 1px solid #a9a9a9;
+  vertical-align: middle;
+}
+.pavoboard-wrapper .pavoboard-search .pavoboard-search-table {
+  table-layout: auto;
+  border: 0;
+  float: right;
+  margin: 0;
+}
+.pavoboard-wrapper .pavoboard-search-table .pavoboard-search-td-section {
+  padding-right: 10px !important;
+}
+.pavoboard-wrapper .pavoboard-search-table > tbody > tr {
+  border: 0;
+  border-bottom: 0;
+}
+.pavoboard-wrapper .pavoboard-searh .pavoboard-search-table tr {
+  border: 0;
+  border-bottom: 0;
+}
+.pavoboard-wrapper .pavoboard-search .pavoboard-search-table td {
+  border: 0;
+  vertical-align: middle;
+  padding: 0;
+}
+.pavoboard-wrapper .pavoboard-search .pavoboard-search-table td input {
+  max-width: 175px;
+  height: auto;
+}
+.pavoboard-wrapper .pavoboard-controller-left {
+  float: left;
+}
+.pavoboard-wrapper .pavoboard-controller-right {
+  float: right;
+}
+div.pavoboard-wrapper span.entry_comment_count {
+  color: #5480cb;
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: normal;
+}
+.pavoboard-wrapper .pavoboard-read-verifying-wrapper {
+  margin-top: 10px;
+}
+.pavoboard-wrapper .pavoboard-read-verifying-table {
+  border: 0;
+  table-layout: auto;
+  width: auto;
+  margin: 0 !important;
+}
+.pavoboard-wrapper .pavoboard-read-verifying-table td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.pavoboard-wrapper .pavoboard-read-verifying-table td input[type='password'] {
+  border: 1px solid #e0e0e0;
+  background: #f1f1f1;
+  color: #424242;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+}
+.pavoboard-wrapper .pavoboard-read-verifying-table td a.button-verify-submit {
+  vertical-align: middle !important;
+}
+.pavoboard-comment-wrapper {
+  padding: 10px 10px;
+  background: #f9f9f9;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+}
+.pavoboard-comment-wrapper .each-comment-reply {
+  margin-top: 10px;
+  margin-left: 30px;
+  position: relative;
+}
+.pavoboard-comment-wrapper .pavoboard-comment_reply_icon {
+  position: absolute;
+  left: -20px;
+  top: 0;
+  width: 15px;
+  height: auto;
+}
+.pavoboard-comment-wrapper .each-comment-reply ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pavoboard-comment-wrapper .each-comment-reply ul table {
+  border: 0;
+  width: 100%;
+}
+.pavoboard-comment-wrapper .each-comment-reply ul table td {
+  border: 0;
+  vertical-align: top;
+}
+div.pavoboard-comment-wrapper table.comment-author-table {
+  width: auto !important;
+  table-layout: auto;
+  border: 0;
+  margin: 0;
+}
+div.pavoboard-comment-wrapper table.comment-author-table td {
+  padding: 0px 5px !important;
+  vertical-align: middle;
+  border: 0 !important;
+  line-height: 12px;
+}
+.pavoboard-wrapper .comments-count {
+  padding-left: 10px;
+  font-size: 12px;
+  text-align: left;
+  display: inline-block;
+}
+.pavoboard-wrapper .comments-sorting {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  text-align: right;
+}
+div.pavoboard-wrapper a.comment-reply-button {
+  cursor: pointer;
+  font-size: 11px
+}
+div.pavoboard-wrapper a.comment-modify-button {
+  cursor: pointer;
+  font-size: 11px
+}
+div.pavoboard-wrapper a.comment-delete-button {
+  cursor: pointer;
+  font-size: 11px
+}
+.pavoboard-wrapper .comments-count > .total-comments-count {
+  color: orange;
+  font-weight: bold;
+}
+.pavoboard-comment-wrapper .comment-author-table .icon-comment-reply {
+  position: relative;
+  width: 10px;
+  top: 0px;
+  height: auto;
+  margin-right: 3px;
+}
+.pavoboard-comment-wrapper .each-comment {
+  border-bottom: 1px dashed #cecece;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  position: relative;
+}
+.pavoboard-comment-wrapper .each-comment .each-comment-content {
+  padding: 0px 33px 5px 33px;
+}
+.pavoboard-comment-wrapper .comment-author-table .comment-author-date {
+  font-size: 11px;
+  color: #666;
+}
+.pavoboard-comment-wrapper .comment-author-table td {
+  border: 0;
+}
+.pavoboard-comment-wrapper .avatar {
+  border-radius: 0 !important;
+}
+.pavoboard-comment-wrapper .pavoboard-comment-input {
+  background: #fff !important;
+}
+.pavoboard-comment-wrapper > .comments-add {
+  margin-top: 10px;
+}
+.pavoboard-comment-wrapper > .comments-add > ul {
+  list-style: none;
+  margin: 10px 0 !important;
+  padding: 0;
+  text-align: left;
+}
+.pavoboard-comment-wrapper .comments-add-ul {
+  margin-top: 0px !important;
+}
+.pavoboard-comment-wrapper .comments-add-ul > li {
+  margin: 0 10px;
+  font-size: 12px;
+}
+.pavoboard-comment-wrapper .pavoboard-comment-input-ul {
+  margin-bottom: 0 !important;
+}
+.pavoboard-comment-wrapper > .comments-add > ul > li {
+  display: inline-block;
+  margin: 0px;
+  font-size: 12px !important;
+  list-style: none;
+  color: #424242;
+}
+.pavoboard-comment-wrapper > .comments-add > ul > li:before {
+  border: none;
+  content: '';
+}
+.pavoboard-comment-wrapper > .comments-add > ul > li:after {
+  border: none;
+  content: '';
+}
+.pavoboard-comment-wrapper .comments-reply-ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.pavoboard-comment-wrapper > .comments-add .pavoboard-comment-content-li {
+  clear: both;
+  max-width: 100%;
+  width: 100%;
+}
+.pavoboard-comment-wrapper > .comments-add .pavoboard-comment-content-li .pavoboard-comment-content-table {
+  border: 0px !important;
+  margin: 0;
+  width: 100%;
+  border-spacing: 0px !important;
+}
+.pavoboard-comment-wrapper > .comments-add .pavoboard-comment-content-li .pavoboard-comment-content-table tbody tr {
+  border: 0 !important;
+  background: none !important;
+}
+.pavoboard-comment-wrapper > .comments-add .pavoboard-comment-content-li .pavoboard-comment-content-table td {
+  border: 0 !important;
+  padding: 0;
+  background: transparent;
+}
+.pavoboard-comment-wrapper > .comments-add .pavoboard-comment-content-li .pavoboard-comment-content-table td.pavoboard-comment-content-td textarea.pavoboard-comment-content {
+  display: block;
+  background: #fff;
+  line-height: 1.5;
+  height: 60px;
+  min-height: inherit;
+}
+.pavoboard-comment-wrapper .pavoboard-comment-button-td {
+  width: 80px;
+  vertical-align: middle !important;
+  background: none;
+  padding: 0;
+}
+.pavoboard-comment-wrapper .pavoboard-comment-button-td > input {
+  border-color: none;
+  background: none;
+  background-color: none;
+}
+.pavoboard-comment-wrapper > .comments-add .pavoboard-comment-content-li textarea {
+  max-width: 100%;
+  min-height: 64px;
+}
+
+/* ×â??ê¸? */
+
+#pavoboard-latest-wrapper {
+  width: 100%;
+  height: auto;
+}
+#pavoboard-latest-wrapper #pavoboard-latest-table {
+  border: 0;
+  width: 100%;
+}
+#pavoboard-latest-wrapper #pavoboard-latest-table th {
+  font-size: 12px;
+  border: 0;
+  border-top: 1px solid #cecece;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 10px;
+}
+#pavoboard-latest-wrapper #pavoboard-latest-table td {
+  border: 0;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 10px;
+}
+#pavoboard-latest-wrapper #pavoboard-latest-table td a {
+  text-decoration: none;
+  color: #424242;
+  border: 0;
+}
+#pavoboard-latest-wrapper #pavoboard-latest-table td.pavoboard-latest-td-date {
+  text-align: center;
+  color: gray;
+}
+.pavoboard-search button.pavoboard-button {
+  height: 29px;
+  line-height: 29px;
+}
+.reply-list-title {
+  padding-left: 10px !important;
+}
+.reply-list-title img {
+  height: auto;
+  position: relative;
+  top: 0px;
+  margin-right: 5px !important;
+  display: inline-block;
+  line-height: 0;
+  vertical-align: top
+}
+.pavoboard-wrapper .noti-td .noti-icon {
+  background: #5480cb;
+  color: #fff;
+  padding: 1px 2px;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+.pavoboard-wrapper .prenext {
+  padding: 10px 0px;
+}
+.pavoboard-wrapper .prenext th span {
+  display: none !important;
+}
+div.pavoboard-wrapper .prenext table#pavoboard-table thead tr th {
+  height: 1px;
+  padding: 0;
+  border-top: 0px solid #cecece;
+}
+.pavoboard-wrapper .paging-area {
+  position: relative;
+  height: 40px;
+}
+.pavoboard-wrapper .pagingNav {
+  font-family: Tahoma;
+  font-size: 11px;
+  margin: 15px auto;
+  text-align: center;
+}
+.pavoboard-wrapper .pagingNav a, .pavoboard-wrapper .pagingNav strong {
+  border: 1px solid #ddd;
+  color: #999;
+  display: inline-block;
+  padding: 2px 5px;
+  vertical-align: top;
+  height: 20px;
+  line-height: 20px !important;
+}
+.pavoboard-wrapper .pagingNav strong {
+  border: 1px solid #6c93fd;
+  color: #6c93fd;
+  font-weight: normal;
+}
+.pavoboard-wrapper .pagingNav .pre_end, .pavoboard-wrapper .pagingNav .pre, .pavoboard-wrapper .pagingNav .next, .pavoboard-wrapper .pagingNav .next_end {
+  background: rgba(0, 0, 0, 0) url("../images/btn_paging.gif") no-repeat scroll 0 0;
+  border: 1px solid #fff;
+  overflow: hidden;
+  padding: 2px 5px;
+  width: 2px;
+}
+.pavoboard-wrapper .pagingNav .pre_end span, .pavoboard-wrapper .pagingNav .pre span, .pavoboard-wrapper .pagingNav .next span, .pavoboard-wrapper .pagingNav .next_end span {
+  display: inline-block;
+  height: 20px;
+  line-height: 100px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+.pavoboard-wrapper .pagingNav .pre_end {
+  background-position: left 8px;
+}
+.pavoboard-wrapper .pagingNav .pre {
+  background-position: left -21px;
+}
+.pavoboard-wrapper .pagingNav .next {
+  background-position: left -71px;
+}
+.pavoboard-wrapper .pagingNav .next_end {
+  background-position: left -47px;
+}
+.pavoboard-wrapper .pagingNav .pre_end.nolink {
+  background-position: right 8px;
+}
+.pavoboard-wrapper .pagingNav .pre.nolink {
+  background-position: right -21px;
+}
+.pavoboard-wrapper .pagingNav .next.nolink {
+  background-position: right -71px;
+}
+.pavoboard-wrapper .pagingNav .next_end.nolink {
+  background-position: right -47px;
+}
+.pavoboard-wrapper .pagingNav a:hover {
+  opacity: 0.6;
+}
+.pavoboard-wrapper .pageNav {
+  height: 16px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.pavoboard-wrapper .pageNav a, .pavoboard-wrapper .pageNav strong {
+  border-left: 1px solid #d5d5d5;
+  border-right: 1px solid #d5d5d5;
+  color: #606060;
+  display: inline-block;
+  font-family: Tahoma;
+  font-size: 11px;
+  height: 16px;
+  line-height: 16px;
+  margin-left: -1px;
+  padding: 0 6px;
+  vertical-align: middle;
+}
+.pavoboard-wrapper .pageNav strong {
+  background: #f4f4f4;
+  font-weight: bold;
+  line-height: 16px;
+}
+.pavoboard-wrapper .pageNav a.pre, .pageNav a.next {
+  background: url("../images/btn_paging.gif") no-repeat scroll 2px -25px;
+  border: medium none;
+  display: inline-block;
+  height: 16px;
+  overflow: hidden;
+  padding: 0;
+  width: 20px;
+}
+.pavoboard-wrapper .pageNav a.next {
+  background: url("../images/btn_paging.gif") no-repeat scroll 8px -75px;
+}
+.pavoboard-wrapper .pageNav a.pre span, .pageNav a.next span {
+  display: inline-block;
+  text-indent: -100px;
+}
+.pavoboard-wrapper .dot_paging {
+  text-align: center;
+}
+.pavoboard-wrapper .dot_paging a {
+  background: rgba(0, 0, 0, 0) url("../backend/bg_popup.png") no-repeat scroll left -204px;
+  display: inline-block;
+  height: 8px;
+  overflow: hidden;
+  width: 8px;
+}
+.pavoboard-wrapper .dot_paging a.on {
+  background: rgba(0, 0, 0, 0) url("../backend/bg_popup.png") no-repeat scroll right -204px;
+}
+pavoboard-wrapper .page a {
+  background: rgba(0, 0, 0, 0) url("../backend/bg_popup.png") no-repeat scroll right -108px;
+  display: block;
+  height: 29px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  width: 17px;
+}
+.pavoboard-wrapper .page a.pre {
+  left: 20px;
+}
+.pavoboard-wrapper .page a.next {
+  background-position: left -108px;
+  right: 20px;
+}
+.pavoboard-wrapper .page a:hover {
+  background-position: right -68px;
+}
+.pavoboard-wrapper .page a.next:hover {
+  background-position: left -68px;
+}
+.pavoboard-wrapper .search-center {
+  text-align: center;
+}
+.pavoboard-wrapper .input-text, .pavoboard-wrapper input[type="text"], .pavoboard-wrapper #tribe-bar-form input[type="text"] {
+  width: auto;
+}
+.pavoboard-wrapper .board_detail .attachFile {
+  float: right;
+  margin-left: 10px;
+  position: relative;
+  top: 1px;
+}
+.pavoboard-wrapper .board_detail .attachFile a {
+  display: block;
+  width: auto;
+  padding: 10px 0px 0px 0px;
+}
+.pavoboard-wrapper .board_detail .attachFile a em {
+  div.pavoboard-wrapper table#pavoboard-table > tbody > tr > td.pavoboard-list-title > a font-weight: bold;
+  font-style: normal;
+}
+.pavoboard-wrapper .board_detail .attachFile .attach_layer {
+  position: relative;
+  z-index: 9;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList {
+  background: #ffffff;
+  border: 1px solid #a8a8a8;
+  box-shadow: 1px 1px #dddddd;
+  display: none;
+  padding: 9px 20px 7px 10px;
+  position: absolute;
+  right: 0;
+  width: 248px;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList li {
+  background: rgba(0, 0, 0, 0);
+  border-bottom: medium none;
+  margin-bottom: 2px;
+  list-style: none;
+  padding: 3px 0;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList li.item a {
+  background: rgba(0, 0, 0, 0) url("../images/icon_set.png") no-repeat scroll 1px -365px;
+  color: #333;
+  overflow: hidden;
+  padding: 1px 1px 1px 15px;
+  line-height: 100%;
+  word-wrap: normal;
+  text-decoration: none;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList li.item a:hover {
+  opacity: 0.7;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList li.toparrow {
+  background: rgba(0, 0, 0, 0) url("../images/front/arrow_set.png") no-repeat scroll center -51px;
+  border-bottom: medium none;
+  position: absolute;
+  right: 37px;
+  top: -5px;
+  width: 7px;
+  height: 15px;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList li.btn_close {
+  height: 20px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 20px;
+  cursor : pointer;
+}
+.pavoboard-wrapper .board_detail .attachFile .innerList li.btn_close a {
+  background: rgba(0, 0, 0, 0) url("../images/front/button_set.png") no-repeat scroll 4px -268px;
+  height: 20px;
+  overflow: hidden;
+  width: 20px;
+}
+.comment-editor .comment-reply-input {
+  text-align: right
+}
+.comment-editor div.comment-reply-input input {
+  background: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  display: inline-block !important;
+  font-size: 12px;
+  height: auto !important;
+  line-height: 12px !important;
+  padding: 8px 3px !important;
+  width: 119px;
+}
+
+div.pavoboard-wrapper div#pavoboard-read-table div.writer-section div.regist-info {
+  text-align: right;
+  background: #FF3;
+  float: right
+}
+
+div.pavoboard-wrapper .head-st {
+  padding: 10px;
+  background: #f6f6f6;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+div.pavoboard-wrapper .head-st h2 {
+  font-size: 16px;
+}
+
+div.pavoboard-wrapper .head-st .text {
+  padding: 10px;
+}
+
+div.pavoboard-wrapper .head-st .text:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* Media Query */
+
+@media(max-width:480px) {
+  div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-captcha {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+  div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.write-comment-captcha {
+    margin-left: 15px;
+  }
+  div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-captcha span.write-span {
+    display: inline-block;
+    height: inherit;
+  }
+  div.pavoboard-wrapper div.pavoboard-write-wrapper div.write-captcha label {
+    display: none !important;
+  }
+  .pavoboard-wrapper #pavoboard-write-table .captcha-title-th {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-search-table .pavoboard-search-td-section {
+    display: none;
+  }
+  .pavoboard-wrapper #pavoboard-read-table > tbody > tr > th {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 12px 10px;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-content {
+    font-size: 14px;
+    padding: 12px 10px;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-content img {
+    max-width: 100% !important;
+    height: auto;
+  }
+  .pavoboard-comment-wrapper .comments-add > ul > li {
+    display: block;
+    margin: 0;
+  }
+  .pavoboard-comment-wrapper .comments-add > ul > .comments-add-email {
+    margin-top: 10px;
+    margin-left: 0px !important;
+  }
+  .pavoboard-wrapper > #pavoboard-table tbody td {
+    padding: 5px 0;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-title > a {
+    font-size: 14px !important;
+    position: relative;
+    top: 4px;
+    line-height: 20px !important;
+    font-style: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-inline-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    /* number of lines to show */
+    vertical-align: top !important;
+    margin-bottom: 3px;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-title {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 18px;
+  }
+  .pavoboard-wrapper > #pavoboard-table tbody .pavoboard-list-title > .mobile-writer-info {
+    display: inline-block !important;
+    width: 100%;
+    margin-top: 0;
+  }
+  .pavoboard-wrapper > #pavoboard-table tbody .pavoboard-list-title > .mobile-writer-info > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 5px;
+    line-height: 12px;
+  }
+  .pavoboard-wrapper > #pavoboard-table tbody .pavoboard-list-title > .mobile-writer-info > ul > li {
+    float: left;
+    font-size: 11px;
+    margin: 0px 10px 0px 0px;
+    color: gray;
+    list-style: none;
+    white-space: nowrap;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td {
+    padding: 12px 15px;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > li:after {
+    content: '';
+    border: none;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > li:before {
+    content: '';
+    border: none;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-title-date {
+    clear: both;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-writer {
+    padding: 0;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-date {
+    padding: 0;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-hit {
+    padding: 0;
+  }
+  .pavoboard-wrapper #pavoboard-read-table .write-info .write-info-td ul > .write-info-title-hit {
+    clear: both;
+  }
+  .pavoboard-wrapper .pavoboard-table > thead > tr {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .entry-th-writer {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-section {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-writer {
+    display: none;
+  }
+  .pavoboard-wrapper .pagingNav {
+    text-align: left;
+  }
+  div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-controller {
+    position: relative;
+    left: 65px;
+    top: -10px;
+  }
+  div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .children .each-comment div.comment-controller {
+    left: 80px;
+  }
+  div.pavoboard-wrapper div#pavoboard-read-table div.pavoboard-comment-list .list-wrapper .each-comment div.comment-controller span {
+    margin: 0 5px 0 0;
+  }
+  div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content span.comment-editor-avatar {
+    display: none;
+  }
+  div.pavoboard-wrapper div#pavoboard-read-table div.comment-section div.comment-editor div.comment-editor-content {
+    margin-left: 0;
+  }
+}
+@media(max-width:768px) {
+  .pavoboard-wrapper .pavoboard-table .entry-th-number {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .entry-th-date {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .entry-th-hit {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .entry-th-section {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-section {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-number {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-date {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-hit {
+    display: none;
+  }
+  .pavoboard-wrapper .pavoboard-table .pavoboard-list-title {
+    padding-left: 10px !important;
+    text-align: left;
+  }
+  .pagingNav {
+    text-align: left;
+  }
+  .pavoboard-wrapper div.pavoboard-preview, .pavoboard-wrapper div.pavoboard-dashboard {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* errorWrap */
+
+.pavoboard-error {
+  width: 400px;
+  padding: 10px;
+  margin: 50px auto 10px auto;
+}
+.pavoboard-error .error_title {
+  padding: 50px 0 20px 0;
+  text-align: center;
+  font-size: 20px;
+  color: #f96d63;
+  font-weight: bold;
+}
+.pavoboard-error .error_title:before {
+  content: '';
+  display: block;
+  width: 46px;
+  height: 42px;
+  margin: 0 auto 10px auto;
+  background: #f96d63 url(../images/front/icon_warning.png) no-repeat center 0;
+}
+.pavoboard-error .error_title span {
+  color: #333333;
+}
+.pavoboard-error .error_desc {
+  margin-bottom: 15px;
+  color: #999;
+}
+
+/* popup */
+
+#pavoboard-transparent-layer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  z-index: 30;
+}
+.pavoboard-layer {
+  position: absolute;
+  left: 50%;
+  width: 300px;
+  background: #fff;
+  border: 1px solid #7B7B7B;
+}
+.pavoboard-layer .layer-head {
+  position: relative;
+  height: 32px;
+  border: 0;
+  background: #f5f5f5;
+  color: #ccc;
+  line-height: 32px;
+}
+.pavoboard-layer .layer-head h3 {
+  padding: 0 10px;
+  margin: 0;
+  height: 32px;
+  font-size: 14px;
+  color: #333;
+}
+.pavoboard-layer .layer-head a.btn_close {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-family: Arial, sans-serif;
+  line-height: 32px;
+  text-decoration: none;
+}
+.pavoboard-layer .layer-head a.btn_close:hover {
+  opacity: 0.7;
+}
+.pavoboard-layer .layer-body {
+  padding: 20px 10px;
+  font-size: 13px;
+}
+.pavoboard-layer .pavoboard-input {
+  margin-bottom: 15px;
+}
+.pavoboard-layer .pavoboard-input input {
+  border: 1px solid #a9a9a9;
+}
+.pavoboard-layer .pavoboard-controller {
+  text-align: center;
+}
+.pavoboard-error .pavoboard-button, .pavoboard-controller .pavoboard-button {
+  display: inline-block;
+  height: 27px;
+  padding: 0 10px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #a9a9a9;
+  font-size: 12px;
+  line-height: 27px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  box-shadow: none;
+  color: #424242;
+  width: auto;
+}
+.pavoboard-error .pavoboard-button:hover, .pavoboard-controller .pavoboard-button:hover {
+  opacity: 0.7;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+}
+
+
+
+
+/* color pick */
+.pavoboard-wrapper .color-box {
+	border: 1px solid #a9a9a9;
+}
+
+
+/*2016.04.04 작성자 레이어*/
+.m_writer_layer {}
+.pavoboard-wrapper .writer_layer {
+  position: relative;
+  z-index: 9;
+  top:-1px;
+}
+.pavoboard-wrapper .writer_layer .innerList {
+  background: #ffffff;
+  border: 1px solid #a8a8a8;
+  box-shadow: 1px 1px #dddddd;
+  display: none;
+  padding: 2px 5px 2px 5px;
+  position: absolute;
+  width:90px;
+  left:-8px 
+}
+.pavoboard-wrapper .m_writer_layer .writer_layer .innerList {
+	top:10px;
+	left:0px 
+}
+.pavoboard-wrapper .writer_layer .innerList li {
+  background: rgba(0, 0, 0, 0);
+  border-bottom: medium none;
+  margin-bottom: 2px;
+  list-style: none;
+  padding: 3px;
+  text-align:left;
+}
+.pavoboard-wrapper .writer_layer .innerList li.item a {
+  color: #333;
+  overflow: hidden;
+  padding: 1px 1px 1px 10px;
+  line-height: 100%;
+  word-wrap: normal;
+  text-decoration: none;
+  max-width: 100% !important;
+}
+.pavoboard-wrapper .writer_layer .innerList li.item a:hover {
+  opacity: 0.7;
+}
+.pavoboard-wrapper .writer_layer .innerList li.toparrow {
+  background: rgba(0, 0, 0, 0) url("../images/front/arrow_set.png") no-repeat scroll center -51px;
+  border-bottom: medium none;
+  position: absolute;
+  right: 37px;
+  top: -5px;
+  width: 7px;
+  height: 15px;
+}
+.pavoboard-read-h2 .writer_layer {top:-5px;}
+.pavoboard-read-h2 .writer_layer .innerList li.toparrow {
+  background: rgba(0, 0, 0, 0) url("../images/front/arrow_set.png") no-repeat scroll center -51px;
+  right:70px;
+}
+.pavoboard-wrapper .writer_layer .innerList li.btn_close {
+  height: 20px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  width: 20px;
+  cursor : pointer;
+}
+.pavoboard-wrapper .writer_layer .innerList li.btn_close {
+ background: rgba(0, 0, 0, 0) url("../images/front/button_set.png") no-repeat scroll 4px -268px;
+  height: 20px;
+  overflow: hidden;
+  width: 20px;
+ }
